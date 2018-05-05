@@ -5,7 +5,7 @@ F:\Hack\DeadFace\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReferenc
 F:\Hack\DeadFace\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
 F:\Hack\DeadFace\TestConsole\obj\Debug\TestConsole.exe
 F:\Hack\DeadFace\TestConsole\obj\Debug\TestConsole.pdb
-F:\Hack\DeadFace\TestConsole\bin\Debug\DeadFace.dll
 F:\Hack\DeadFace\TestConsole\bin\Debug\Newtonsoft.Json.dll
-F:\Hack\DeadFace\TestConsole\bin\Debug\DeadFace.pdb
 F:\Hack\DeadFace\TestConsole\bin\Debug\Newtonsoft.Json.xml
+F:\Hack\DeadFace\TestConsole\bin\Debug\FaceFinder.dll
+F:\Hack\DeadFace\TestConsole\bin\Debug\FaceFinder.pdb

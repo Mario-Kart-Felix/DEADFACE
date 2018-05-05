@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DeadFace.Data;
+﻿using System.Linq;
 using System.Reflection;
+using FaceFinder.Data;
 
-namespace DeadFace.Finders
+namespace FaceFinder.Finders
 {
     public class MainFinder : AbstractFinder<InputData, object>
     {

@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DeadFace;
-using DeadFace.Data;
-using DeadFace.Finders;
-using  Newtonsoft;
+using FaceFinder.Data;
+using FaceFinder.Finders;
+using Newtonsoft;
 using Newtonsoft.Json;
 
 namespace TestConsole
@@ -21,9 +20,13 @@ namespace TestConsole
                 {
                     name = new Name
                     {
-                      firstName  = "Вадим",
-                      lastName = "Иванов",
-                      patronymic = "Иванович"
+                      firstName  = "Антон",
+                      lastName = "Абросимов",
+                      patronymic = "Дмитривевич"
+                    },
+                    passport = new Passport
+                    {
+                      birthDate  = DateTime.Parse("14.07.1998")
                     },
                     phone = "123"
                 },
@@ -34,7 +37,11 @@ namespace TestConsole
                         firstName  = "Егор",
                         lastName = "Воронов",
                         patronymic = "Иванович"
-                    }
+                    },
+                    passport = new Passport
+                    {
+                    birthDate  = DateTime.Parse("14.07.1998")
+                },
                 }
             };
             foreach (var data in test_data)

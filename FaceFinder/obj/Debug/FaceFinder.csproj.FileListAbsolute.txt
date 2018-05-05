@@ -1,0 +1,8 @@
+F:\Hack\DeadFace\FaceFinder\bin\Debug\FaceFinder.dll
+F:\Hack\DeadFace\FaceFinder\bin\Debug\FaceFinder.pdb
+F:\Hack\DeadFace\FaceFinder\bin\Debug\Newtonsoft.Json.dll
+F:\Hack\DeadFace\FaceFinder\bin\Debug\Newtonsoft.Json.xml
+F:\Hack\DeadFace\FaceFinder\obj\Debug\FaceFinder.csprojResolveAssemblyReference.cache
+F:\Hack\DeadFace\FaceFinder\obj\Debug\FaceFinder.csproj.CoreCompileInputs.cache
+F:\Hack\DeadFace\FaceFinder\obj\Debug\FaceFinder.dll
+F:\Hack\DeadFace\FaceFinder\obj\Debug\FaceFinder.pdb

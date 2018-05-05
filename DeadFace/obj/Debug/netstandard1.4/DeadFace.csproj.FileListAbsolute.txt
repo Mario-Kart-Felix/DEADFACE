@@ -1,8 +1,0 @@
-F:\Hack\DeadFace\DeadFace\bin\Debug\netstandard1.4\DeadFace.deps.json
-F:\Hack\DeadFace\DeadFace\bin\Debug\netstandard1.4\DeadFace.dll
-F:\Hack\DeadFace\DeadFace\bin\Debug\netstandard1.4\DeadFace.pdb
-F:\Hack\DeadFace\DeadFace\obj\Debug\netstandard1.4\DeadFace.csprojResolveAssemblyReference.cache
-F:\Hack\DeadFace\DeadFace\obj\Debug\netstandard1.4\DeadFace.csproj.CoreCompileInputs.cache
-F:\Hack\DeadFace\DeadFace\obj\Debug\netstandard1.4\DeadFace.AssemblyInfo.cs
-F:\Hack\DeadFace\DeadFace\obj\Debug\netstandard1.4\DeadFace.dll
-F:\Hack\DeadFace\DeadFace\obj\Debug\netstandard1.4\DeadFace.pdb

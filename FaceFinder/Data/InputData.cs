@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace DeadFace.Data
+namespace FaceFinder.Data
 {
     public class InputData
     {
