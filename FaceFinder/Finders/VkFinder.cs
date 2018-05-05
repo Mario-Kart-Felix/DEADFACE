@@ -8,7 +8,9 @@ namespace FaceFinder.Finders
         {
             Children = new AbstractFinder[]
             {
-                new VkWallFinder()
+                new VkWallFinder(),
+                new VkGroupsFinder(),
+                new VkFriendsFinder(), 
             };
         }
         private const string vk_token = "2010037d3a49142291a1a4938b53a6988f6fea2b8a8efd33c1c45fe33e7ad72764a28ff6e54f9c4417260";

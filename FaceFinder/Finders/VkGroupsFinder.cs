@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FaceFinder.Data;
 
-namespace FaceFinder.Data
+namespace FaceFinder.Finders
 {
-    public class VkWallFinder : AbstractFinder<VkProfile, object>
+    public class VkGroupsFinder : AbstractFinder<VkProfile, object>
     {
-        public override string Name { get; } = "Стена ВКонтакте";
+        public override string Name { get; } = "Группы ВКонтакте";
         public override void Find()
         {
             base.Find();

@@ -49,6 +49,8 @@
     <Compile Include="Data\VkWallFinder.cs" />
     <Compile Include="Finders\MainFinder.cs" />
     <Compile Include="Finders\VkFinder.cs" />
+    <Compile Include="Finders\VkFriendsFinder.cs" />
+    <Compile Include="Finders\VkGroupsFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleGet.cs" />
   </ItemGroup>
