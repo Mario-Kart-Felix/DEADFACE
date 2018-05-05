@@ -15,6 +15,10 @@ namespace DeadFace.Data
         public string firstName;
         public string lastName;
         public string patronymic;
+        public override string ToString()
+        {
+            return lastName + " " + firstName + " " + patronymic;
+        }
     }
     public class Passport
     {

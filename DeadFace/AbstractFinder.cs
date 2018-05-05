@@ -1,40 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using  System.Reflection;
+using System.Reflection;
 
 namespace DeadFace
 {
     public abstract class AbstractFinder
     {
+        public abstract string Name { get; }
         private static readonly Dictionary<Type, AbstractFinder> _finders = new Dictionary<Type, AbstractFinder>();
-        public T GetF<T>() where T : AbstractFinder
+        public IEnumerable<AbstractFinder> Finders => _finders.Select(x => x.Value);
+        protected T GetF<T>() where T : AbstractFinder
         {
             return (T)_finders[typeof(T)];
         }
-        public AbstractFinder(AbstractFinder[] children)
+        protected AbstractFinder()
         {
-            _finders.Add(GetType(), this);
-            Children = children ?? new AbstractFinder[0];
+            _finders[GetType()] = this;
         }
-        protected AbstractFinder[] Children { get; }
+        protected AbstractFinder[] Children { get; set; }
         public virtual void Find()
         {
-            foreach (var children in Children)
+            foreach (var children in Children ?? Enumerable.Empty<AbstractFinder>())
                 children.Find();
         }
-        public virtual double Rating()
-        {
-            return Children.Sum(x => x.Rating());
-        }
+
+        public bool? IsReliable { get; protected set; } = true;
     }
     public abstract  class AbstractFinder<TIn, TOut> : AbstractFinder
     {
         public TIn Input { protected get; set; }
         public TOut Output { get; protected set; }
-
-        public AbstractFinder(AbstractFinder[] childrens) : base(childrens)
-        {
-        }
     }
 }
