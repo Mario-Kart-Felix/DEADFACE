@@ -21,7 +21,14 @@ namespace FaceFinder
         public virtual void Find()
         {
             foreach (var children in Children ?? Enumerable.Empty<AbstractFinder>())
-                children.Find();
+                try
+                {
+                    children.Find();
+                }
+                catch (Exception e)
+                {
+                    children.IsReliable = false;
+                }
         }
 
         public bool? IsReliable { get; protected set; } = true;

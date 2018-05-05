@@ -34,13 +34,26 @@ namespace TestConsole
                 {
                     name = new Name
                     {
-                        firstName  = "Егор",
-                        lastName = "Воронов",
-                        patronymic = "Иванович"
+                        firstName  = "Николай",
+                        lastName = "Коршунов",
+                        patronymic = ""
                     },
                     passport = new Passport
                     {
-                    birthDate  = DateTime.Parse("14.07.1998")
+                        birthDate  = DateTime.Parse("20.12.1996")
+                    },
+                },
+                new InputData
+                {
+                    name = new Name
+                    {
+                        firstName  = "Артур",
+                        lastName = "Газизов",
+                        patronymic = ""
+                    },
+                    passport = new Passport
+                    {
+                    birthDate  = DateTime.Parse("17.07.1997")
                 },
                 }
             };

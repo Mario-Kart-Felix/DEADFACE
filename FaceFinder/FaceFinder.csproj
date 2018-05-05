@@ -47,12 +47,15 @@
     <Compile Include="Data\InputData.cs" />
     <Compile Include="Data\VkProfile.cs" />
     <Compile Include="Data\VkWallFinder.cs" />
+    <Compile Include="Finders\EduFinder.cs" />
+    <Compile Include="Finders\FoafFinder.cs" />
     <Compile Include="Finders\MainFinder.cs" />
     <Compile Include="Finders\VkFinder.cs" />
     <Compile Include="Finders\VkFriendsFinder.cs" />
     <Compile Include="Finders\VkGroupsFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleGet.cs" />
+    <Compile Include="VK.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

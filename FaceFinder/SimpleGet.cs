@@ -13,7 +13,7 @@ namespace FaceFinder
             myRequest.Method = "GET";
             using (WebResponse myResponse = myRequest.GetResponse())
             {
-                using (StreamReader sr = new StreamReader(myResponse.GetResponseStream(), Encoding.UTF8))
+                using (StreamReader sr = new StreamReader(myResponse.GetResponseStream(), Encoding.GetEncoding(1251)))
                 {
                     return sr.ReadToEnd();
                 }

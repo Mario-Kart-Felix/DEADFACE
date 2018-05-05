@@ -12,8 +12,21 @@ namespace FaceFinder.Finders
         public override string Name { get; } = "Друзья ВКонтакте";
         public override void Find()
         {
-            IsReliable = false;
-            Output = "Мало друзей";
+            var res = new VkApi.friends_get
+            {
+                user_id = Input.id
+            }.Go();
+            int friends = Convert.ToInt32(res["count"]);
+            if (friends < 50)
+            {
+                Output = "Мало друзей: " + friends;
+                IsReliable = false;
+            }
+            else if(friends > 250)
+            {
+                Output = "Подозрительно много друзей: " + friends;
+                IsReliable = false;
+            }
             base.Find();
         }
     }
