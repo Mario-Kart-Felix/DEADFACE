@@ -14,6 +14,7 @@ namespace FaceFinder.Finders
             Children = new AbstractFinder[]
             {
                 new EduFinder(),
+                new DateFinder(), 
             };
         }
         public override string Name { get; } = null;
@@ -21,6 +22,7 @@ namespace FaceFinder.Finders
         {
             var foaf = VkApi.Foaf(Input);
             GetF<EduFinder>().Input = foaf.Elements().FirstOrDefault().Elements().Where(x => x.Name.LocalName == "edu");
+            GetF<DateFinder>().Input = foaf.Elements().FirstOrDefault().Elements().Where(x => x.Name.LocalName == "created");
             base.Find();
         }
     }

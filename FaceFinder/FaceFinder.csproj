@@ -47,6 +47,7 @@
     <Compile Include="Data\InputData.cs" />
     <Compile Include="Data\VkProfile.cs" />
     <Compile Include="Data\VkWallFinder.cs" />
+    <Compile Include="Finders\DateFinder.cs" />
     <Compile Include="Finders\EduFinder.cs" />
     <Compile Include="Finders\FoafFinder.cs" />
     <Compile Include="Finders\MainFinder.cs" />
